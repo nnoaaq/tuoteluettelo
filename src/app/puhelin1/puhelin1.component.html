@@ -16,7 +16,7 @@
     <div class="ala-osa">
         <div class="saatavuus" *ngFor="let tuoteSaatavuus of saatavuus">
             <p><strong>Availability and Networks</strong></p>
-            <p> {{ tuoteSaatavuus }} </p>
+            <p *ngFor="let saatavuus of tuoteSaatavuus"> {{ saatavuus }} </p>
         </div>
         <div class="akku">
             <p class="akku"> <strong>Type</strong>
